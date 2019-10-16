@@ -43,30 +43,30 @@ let playerMove = getMoveName(playerInput);
 printMessage('Twój ruch to: ' + playerMove);
 
 function displayResult(argComputerMove, argPlayerMove) {
-  if( computerMove == 'kamień' && playerMove == 'nożyce'){
+  if( argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
   printMessage('Przegrałeś!');
-} else if ( computerMove == 'papier' && playerMove == 'kamień'){
+} else if ( argComputerMove == 'papier' && argPlayerMove == 'kamień'){
   printMessage('Przegrałeś!');
-} else if ( computerMove == 'nożyce' && playerMove == 'papier'){
+} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
   printMessage('Przegrałeś!');
-} else if ( computerMove == 'nożyce' && playerMove == 'kamień'){
+} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
   printMessage('Wygrałeś!');
-} else if ( computerMove == 'kamień' && playerMove == 'papier'){
+} else if ( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
   printMessage('Wygrałeś!');
-} else if ( computerMove == 'papier' && playerMove == 'nożyce'){
+} else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
   printMessage('Wygrałeś!');
-} else if ( computerMove == 'papier' && playerMove == 'papier'){
+} else if ( argComputerMove == 'papier' && argPlayerMove == 'papier'){
   printMessage('Remis!');
-} else if ( computerMove == 'nożyce' && playerMove == 'nożyce'){
+} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
   printMessage('Remis!');
-} else if ( computerMove == 'kamień' && playerMove == 'kamień'){
+} else if ( argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
   printMessage('Remis!');
-} else if ( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+} else if ( argComputerMove == 'kamień' && argPlayerMove == 'nieznany ruch'){
   printMessage('Spróbuj jeszcze raz!');
-} else if ( computerMove == 'papier' && playerMove == 'nieznany ruch'){
+} else if ( argComputerMove == 'papier' && argPlayerMove == 'nieznany ruch'){
   printMessage('Spróbuj jeszcze raz!');
-} else if ( computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
+} else if ( argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch'){
   printMessage('Spróbuj jeszcze raz!');
   }
 }
-displayResult();
+displayResult(computerMove, playerMove);
